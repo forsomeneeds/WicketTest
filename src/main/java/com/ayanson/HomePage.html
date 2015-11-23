@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org/">
+<style>
+    table, td, th {
+    border: 1px solid blue;
+    }
+
+    th {
+    background-color: blue;
+    color: white;
+    }
+</style>
+
+<body>
+
+<button wicket:id="refreshButton">Обновить</button><br/><br/>
+
+<table wicket:id="theContainer">
+    <tr><th>Item_Id</th><th>Group_Id</th></tr>
+    <tr wicket:id="dataList">
+        <td><span wicket:id="itemId">Item_Id</span></td>
+        <td><span wicket:id="groupId">Group_Id</span></td>
+    </tr>
+</table><br/>
+
+<form id="ajaxForm" method="get" wicket:id="form">
+    <fieldset>
+        Item_Id: <input type="text" wicket:id="inputItemId" size="50"/>
+        Group_Id: <input type="text" wicket:id="inputGroupId" size="50"/>
+        <input type="button" wicket:id="addButton" size="50" value="Добавить"/>
+    </fieldset>
+</form>
+<br/>
+
+</body>
+</html>

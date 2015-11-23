@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:wicket="http://wicket.apache.org/">
+<style>
+    table, td, th {
+    border: 1px solid blue;
+    }
+
+    th {
+    background-color: blue;
+    color: white;
+    }
+</style>
+
+<body>
+
+<button wicket:id="yourButtonId">Обновить</button>
+
+<table wicket:id="theContainer">
+    <tr><th>index</th><th>name</th><th>date</th></tr>
+    <tr wicket:id="hateList">
+        <td><span wicket:id="hateIndex">index</span></td>
+        <td><span wicket:id="hateName">name</span></td>
+        <td><span wicket:id="hateDate">date</span></td>
+    </tr>
+</table>
+
+<form id="ajaxForm" method="get" wicket:id="form">
+    <fieldset>
+        Username: <input type="text" wicket:id="code" size="50"/>
+        <input type="button" wicket:id="addBttn" size="50" value="Добавить"/>
+    </fieldset>
+</form>
+
+
+</body>
+</html>
